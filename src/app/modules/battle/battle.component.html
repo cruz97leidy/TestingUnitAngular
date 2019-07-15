@@ -1,0 +1,8 @@
+<p>battle works!</p>
+<ul>
+    <li *ngFor="let item of collection;trackBy : trackByFn ">{{item.id}}</li>
+</ul>
+<button (click)="addItem()">Add Item</button>
+
+
+<button (click)="goBattle()">Go Battle!</button>

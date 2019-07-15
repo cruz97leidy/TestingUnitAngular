@@ -1,0 +1,25 @@
+<p>login works!</p>
+
+
+<button (click)="redirectBattle()">Battle</button>
+<button (click)="redirectPrincipal()">Search</button>
+
+
+
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">LastName</th>
+        <th scope="col">Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of listOfUsers; let i = index">
+        <th scope="row">{{i+1}}</th>
+        <td>{{user.name}}</td>
+        <td>{{user.username}}</td>
+        <td>{{user.email}}</td>
+      </tr>
+  </table>

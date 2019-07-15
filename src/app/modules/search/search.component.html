@@ -1,0 +1,10 @@
+<p>search works!</p>
+<h1>Search</h1>
+<form [formGroup]="form">
+    <app-custom-input [placeHolder]="'Name'"  formControlName="name" ></app-custom-input>
+    <span *ngIf="form.controls.name.touched && form.controls.name.invalid">Campo Obligatorio</span>
+    <app-custom-input [placeHolder]="'Last Name'" formControlName="lastName"></app-custom-input>
+
+    <button (click)="onSubmit()">Submit!</button>
+</form>
+
